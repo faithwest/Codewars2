@@ -1,14 +1,15 @@
 /* Navbar */
 .navbar {
-    background-color: #0077B6;
+    background-color: blue;
     color: #fff;
     padding: 10px;
+    border-radius: 4px 5px;
   }
   
   .navbar-toggler {
     background-color: transparent;
     border: none;
-    color: #fff;
+    color: #965555;
   }
   
   .navbar-brand {
@@ -39,7 +40,7 @@
 .home {
     text-align: center;
     padding: 20px;
-    background-color: #E5F2E5; 
+    background-color: #b9eab9; 
     color: #333; 
   }
   
@@ -65,4 +66,44 @@
     text-align: center;
     padding: 20px;
   }
+  /*home*/
   
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.column-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+section {
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+
+/* Media query  */
+@media (max-width: 800px) {
+  section {
+    width: 100%;
+  }
+}
+/*footer*/
+.footer {
+  background-color: BLUE;
+  color: #fff;
+  padding: 45px;
+  text-align: center;
+  border-radius: 4px 5px;
+  
+}
+
+.footer-content {
+  max-width: 800px;
+  margin-bottom: 0;
+}
