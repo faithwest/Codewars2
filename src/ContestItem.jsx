@@ -1,4 +1,4 @@
-// ContestItem.jsx
+
 import React from 'react';
 
 function ContestItem({ contest }) {
@@ -7,7 +7,7 @@ function ContestItem({ contest }) {
       <h3>{contest.name}</h3>
       <p>{contest.platform}</p>
       <p>{contest.start_time}</p>
-      {/* Add more details based on the contest data structure */}
+     
     </li>
   );
 }
