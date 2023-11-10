@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home  />} />
-            <Route path="contestlist" element={<ContestList  ContestList={ContestList}/>} />
+            <Route path="contests" element={<ContestList  ContestList={ContestList}/>} />
             <Route path="about" element={<About />} />
           </Route>
         </Routes>
