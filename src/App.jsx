@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home';
-import Weather from './Weather';
 import About from './About';
 import Layout from './Layout';
-import WeatherData from './WeatherData'; // Import WeatherData
+import ContestList from './ContestList'; 
 
 import './App.css';
+
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home WeatherData={WeatherData} />} />
-            <Route path="weather" element={<Weather WeatherData={WeatherData} />} />
+            <Route index element={<Home  />} />
+            <Route path="contestlist" element={<ContestList  ContestList={ContestList}/>} />
             <Route path="about" element={<About />} />
           </Route>
         </Routes>
