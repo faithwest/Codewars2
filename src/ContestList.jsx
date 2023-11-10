@@ -1,4 +1,4 @@
-// ContestList.jsx
+
 import React, { useState, useEffect } from 'react';
 import ContestItem from './ContestItem';
 
@@ -17,19 +17,21 @@ function ContestList() {
   return (
     <div>
       <h1>Contest Information</h1>
-      {contestData && (
         <ul>
-          {contestData.contests.map((contest, index) => (
+          {contestData && contestData.map((contest, index) => (
             <li key={index}>
               <h3>{contest.name}</h3>
               <p>{contest.platform}</p>
               <p>{contest.start_time}</p>
-              {/* Add more details based on the contest data structure */}
+              <p><a href={contest.url} target="_blank" rel="noopener noreferrer">
+              {contest.url}</a></p>
+
+              
               <ContestItem contest={contest} />
             </li>
           ))}
         </ul>
-      )}
+    
     </div>
   );
 }
